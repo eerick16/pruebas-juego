@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://8ox2m6jv0us0"]
+
+[ext_resource type="Script" uid="uid://ccqassrl85ap3" path="res://elevator.gd" id="1_uuuf0"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_fxgcl"]
+size = Vector3(2, 2.5, 2)
+
+[node name="Elevator" type="Area3D" unique_id=2062089964]
+script = ExtResource("1_uuuf0")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1529989216]
+shape = SubResource("BoxShape3D_fxgcl")
+
+[node name="Timer" type="Timer" parent="." unique_id=480698688]
+wait_time = 2.0
+one_shot = true

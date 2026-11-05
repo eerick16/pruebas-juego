@@ -1,0 +1,109 @@
+[gd_scene format=3 uid="uid://c2unos2yoeli4"]
+
+[ext_resource type="PackedScene" uid="uid://basrq5o5wv17k" path="res://assets/personaje/Ch45_nonPBR.fbx" id="1_4flbx"]
+[ext_resource type="AnimationLibrary" uid="uid://dqhmx26oms4uh" path="res://assets/personaje/Male Crouch Pose.fbx" id="2_2hs0m"]
+[ext_resource type="PackedScene" uid="uid://8ky53v4cnfu1" path="res://assets/armas/Pistol.glb" id="2_ivps1"]
+[ext_resource type="AnimationLibrary" uid="uid://dbguy47v2q0b0" path="res://assets/personaje/Sneak Walk.fbx" id="3_1jxqw"]
+[ext_resource type="AnimationLibrary" uid="uid://polacdjeug3g" path="res://assets/personaje/Falling Idle.fbx" id="4_1jxqw"]
+[ext_resource type="AnimationLibrary" uid="uid://b7pyitwrigr6u" path="res://assets/personaje/Breathing Idle.fbx" id="4_dw050"]
+[ext_resource type="AnimationLibrary" uid="uid://b4bpdtfci4tw7" path="res://assets/personaje/Standing To Crouched.fbx" id="5_b26j0"]
+[ext_resource type="AnimationLibrary" uid="uid://ds5kwkjxapl04" path="res://assets/personaje/Crouched Walking.fbx" id="6_n7ghd"]
+[ext_resource type="AnimationLibrary" uid="uid://dn423ufobuxik" path="res://assets/personaje/Pistol Idle.fbx" id="6_nvl01"]
+[ext_resource type="AnimationLibrary" uid="uid://cdr23e1ud6ipy" path="res://assets/personaje/Pistol Kneel To Stand.fbx" id="7_ivps1"]
+[ext_resource type="AnimationLibrary" uid="uid://cavgwsv2ncs4i" path="res://assets/personaje/Pistol Kneeling Idle.fbx" id="8_urp6f"]
+[ext_resource type="AnimationLibrary" uid="uid://ddrcrv5jqq84h" path="res://assets/personaje/Pistol Stand To Kneel.fbx" id="9_bwjto"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_eiimj"]
+radius = 0.2
+height = 1.8764648
+
+[node name="Player" type="CharacterBody3D" unique_id=1732102373 groups=["player"]]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=641777001]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9135835, -0.009277344)
+shape = SubResource("CapsuleShape3D_eiimj")
+
+[node name="Ch45_nonPBR" parent="." unique_id=867899481 instance=ExtResource("1_4flbx")]
+
+[node name="Skeleton3D" parent="Ch45_nonPBR" index="0" unique_id=164155918]
+bones/0/position = Vector3(-0.00020322949, 0.95251757, 0.0030066762)
+bones/0/rotation = Quaternion(0.03549726, -0.45285803, -0.0403174, 0.889963)
+bones/1/rotation = Quaternion(-0.019504396, 0.05704158, 0.023130143, 0.99791324)
+bones/2/rotation = Quaternion(0.023273503, 0.068670005, 0.003999532, 0.99735993)
+bones/3/rotation = Quaternion(0.023938764, 0.068729565, 0.002452802, 0.99734515)
+bones/4/rotation = Quaternion(0.14578052, 0.06459393, -0.029347006, 0.9867697)
+bones/5/rotation = Quaternion(0.11061171, 0.057847377, -0.034106817, 0.9915924)
+bones/7/rotation = Quaternion(-0.5668404, -0.4287384, 0.61592543, -0.3398696)
+bones/8/rotation = Quaternion(0.18878071, -0.23170581, 0.4332775, 0.85026175)
+bones/9/rotation = Quaternion(0.056195352, -0.0044321325, 0.6528698, 0.7553698)
+bones/10/rotation = Quaternion(-0.1792895, -0.37130004, -0.3706513, 0.83223146)
+bones/11/rotation = Quaternion(0.10674301, -0.02325861, 0.23015015, 0.9670036)
+bones/12/rotation = Quaternion(-0.09586759, 0.07660642, 0.012402371, 0.9923644)
+bones/13/rotation = Quaternion(-0.032894555, 0.017395908, 0.13851508, 0.98966104)
+bones/15/rotation = Quaternion(0.2675925, -0.0021218471, 0.031004323, 0.96303093)
+bones/16/rotation = Quaternion(0.5106282, -0.0033820402, -0.08232607, 0.85584456)
+bones/17/rotation = Quaternion(0.2063669, 0.0018666885, -0.036732487, 0.97778326)
+bones/19/rotation = Quaternion(0.35119876, -0.011123964, 0.032858327, 0.9356581)
+bones/20/rotation = Quaternion(0.49836883, -0.00095987506, -0.07720897, 0.8635197)
+bones/21/rotation = Quaternion(0.33384725, 0.002714809, -0.046376955, 0.94148177)
+bones/23/rotation = Quaternion(0.42032138, -0.028725002, 0.047009412, 0.90570134)
+bones/24/rotation = Quaternion(0.50559455, 0.00065885397, -0.067057095, 0.8601612)
+bones/25/rotation = Quaternion(0.17211965, -0.00086172874, -0.024676433, 0.9847666)
+bones/27/rotation = Quaternion(0.32722446, -0.048594143, 0.108266704, 0.93746525)
+bones/28/rotation = Quaternion(0.48728356, -0.0010597764, -0.08322863, 0.86926794)
+bones/29/rotation = Quaternion(0.27071348, 0.00092276186, -0.0486172, 0.9614311)
+bones/31/rotation = Quaternion(0.4803062, -0.3812414, 0.58269906, 0.533313)
+bones/32/rotation = Quaternion(0.37201762, 0.05815602, -0.75186867, 0.5412156)
+bones/33/rotation = Quaternion(0.020308018, 0.005885966, -0.25023925, 0.9679532)
+bones/34/rotation = Quaternion(-0.2041949, 0.37210822, 0.1985925, 0.88340306)
+bones/35/rotation = Quaternion(0.31737638, -0.11788026, -0.23224849, 0.91183186)
+bones/36/rotation = Quaternion(-0.057909008, -0.1866842, 0.23862934, 0.95123696)
+bones/37/rotation = Quaternion(-0.16226116, -0.019080095, 0.44234213, 0.8818395)
+bones/39/rotation = Quaternion(0.21162574, -0.0073952023, -0.01715476, 0.9771722)
+bones/40/rotation = Quaternion(0.4197853, 0.0019557066, 0.056778956, 0.9058436)
+bones/41/rotation = Quaternion(0.43037033, -0.0058227046, 0.045713674, 0.9014753)
+bones/43/rotation = Quaternion(0.4181427, -0.05215286, 0.10322827, 0.9009888)
+bones/44/rotation = Quaternion(0.82332087, 0.0022949185, 0.09208867, 0.5600511)
+bones/45/rotation = Quaternion(0.16240054, -0.0008691456, 0.018714862, 0.98654705)
+bones/47/rotation = Quaternion(0.4698148, -0.013870684, 0.043816175, 0.88156784)
+bones/48/rotation = Quaternion(0.7505345, -7.7672314e-07, 0.09075395, 0.65457004)
+bones/49/rotation = Quaternion(0.41532376, 0.0006612917, 0.052682485, 0.9081467)
+bones/51/rotation = Quaternion(0.48421183, 0.008567554, 0.012519363, 0.87481934)
+bones/52/rotation = Quaternion(0.58084697, 0.0032656868, 0.07879522, 0.8101836)
+bones/53/rotation = Quaternion(0.43288672, -0.0036997362, 0.065555066, 0.899054)
+bones/55/rotation = Quaternion(0.12209165, 0.22986269, 0.95148975, -0.16408548)
+bones/56/rotation = Quaternion(-0.23934689, -0.0865612, 0.016292604, 0.9669307)
+bones/57/rotation = Quaternion(0.42860615, -0.19928107, 0.08816482, 0.87681854)
+bones/58/rotation = Quaternion(0.29707554, -0.058831103, 0.018341444, 0.95286345)
+bones/60/rotation = Quaternion(-0.12275583, 0.07747854, 0.9868981, 0.07042878)
+bones/61/rotation = Quaternion(-0.15301137, -0.07034509, -0.0039775716, 0.9857096)
+bones/62/rotation = Quaternion(0.47194174, 0.26232678, -0.05241758, 0.84006435)
+bones/63/rotation = Quaternion(0.5023796, 0.19251189, 0.025691576, 0.842552)
+
+[node name="BoneAttachment3D" type="BoneAttachment3D" parent="Ch45_nonPBR/Skeleton3D" index="1" unique_id=183779893]
+transform = Transform3D(-0.018276269, 0.22614142, 0.97392297, 0.9997522, 0.016502958, 0.014929117, -0.012696436, 0.97395486, -0.22638693, -0.12568542, 1.5341243, 0.51606697)
+bone_name = "mixamorig1_RightHandIndex1"
+bone_idx = 39
+
+[node name="Root Scene" parent="Ch45_nonPBR/Skeleton3D/BoneAttachment3D" unique_id=645619092 instance=ExtResource("2_ivps1")]
+transform = Transform3D(0.016005043, 0.12780991, 0.01756347, 0.12866792, -0.014523905, -0.011559628, -0.0094026225, 0.01880668, -0.12828842, -0.008306965, 0.009326011, 0.029477715)
+
+[node name="RayCast3D" type="RayCast3D" parent="Ch45_nonPBR/Skeleton3D/BoneAttachment3D/Root Scene" unique_id=1304495516]
+transform = Transform3D(0.1114087, -0.99107915, -0.07313957, 0.9934342, 0.11299676, -0.017938875, 0.026043702, -0.07066053, 0.99716, 1.0460758, 0.56739044, 0.009381056)
+target_position = Vector3(0, -15, 0)
+hit_from_inside = true
+collide_with_areas = true
+
+[node name="AnimationPlayer" parent="Ch45_nonPBR" index="1" unique_id=1882838749]
+libraries/CrouchIdle = ExtResource("2_2hs0m")
+libraries/CrouchWalk = ExtResource("3_1jxqw")
+libraries/FallingIdle = ExtResource("4_1jxqw")
+libraries/Idle = ExtResource("4_dw050")
+libraries/PistolIdle = ExtResource("6_nvl01")
+libraries/PistolKneelToStand = ExtResource("7_ivps1")
+libraries/PistolKneelingIdle = ExtResource("8_urp6f")
+libraries/PistolStandToKneel = ExtResource("9_bwjto")
+libraries/StandToCrouch = ExtResource("5_b26j0")
+libraries/Walk = ExtResource("6_n7ghd")
+
+[editable path="Ch45_nonPBR"]

@@ -1,0 +1,86 @@
+[gd_scene format=3 uid="uid://cni15rjtolye8"]
+
+[ext_resource type="PackedScene" uid="uid://3b0sxyskg4kg" path="res://assets/guardia/Ch15_nonPBR.fbx" id="1_opr0s"]
+[ext_resource type="PackedScene" uid="uid://c4rh7f1l8arhi" path="res://assets/armas/Assault Rifle.glb" id="2_ay375"]
+[ext_resource type="AnimationLibrary" uid="uid://cs3mj4guj5cqg" path="res://assets/guardia/Firing Rifle.fbx" id="2_lrhy8"]
+[ext_resource type="AnimationLibrary" uid="uid://d28qa5vm3r2h4" path="res://assets/guardia/Firing Rifle Walk.fbx" id="3_ay375"]
+[ext_resource type="AnimationLibrary" uid="uid://fsqx1f5b2is7" path="res://assets/guardia/Rifle Idle.fbx" id="4_ioqu5"]
+[ext_resource type="AnimationLibrary" uid="uid://deiinq3khfd1p" path="res://assets/guardia/Rifle Walk.fbx" id="5_tuxdl"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_fxgcl"]
+radius = 0.2
+height = 1.8156738
+
+[node name="Guard" type="CharacterBody3D" unique_id=2119888013]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1846190752]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.89270043, 0)
+shape = SubResource("CapsuleShape3D_fxgcl")
+
+[node name="Ch15_nonPBR" parent="." unique_id=2102513136 instance=ExtResource("1_opr0s")]
+
+[node name="Skeleton3D" parent="Ch15_nonPBR" index="0" unique_id=847309781]
+bones/1/rotation = Quaternion(-0.0132167265, -0.010160506, -0.009370878, 0.99981713)
+bones/2/rotation = Quaternion(0.012454904, -0.0026350038, -0.003903273, 0.99991137)
+bones/3/rotation = Quaternion(0.012446508, -0.0030517606, -0.0020937247, 0.9999157)
+bones/4/rotation = Quaternion(0.052867692, 0.009769853, 0.005339521, 0.99853945)
+bones/5/rotation = Quaternion(-0.012315154, 0.093601406, -0.023473874, 0.9952569)
+bones/7/rotation = Quaternion(-0.5463142, -0.44209698, 0.5699608, -0.42571822)
+bones/8/rotation = Quaternion(-0.06730479, -0.0014781934, 0.021907521, 0.9974908)
+bones/9/rotation = Quaternion(-0.014342471, -0.0001797968, 0.012533737, 0.99981856)
+bones/10/rotation = Quaternion(0.04161693, 0.109088205, 0.030176844, 0.99270195)
+bones/11/rotation = Quaternion(0.11520078, 0.031131983, 0.25901845, 0.95847225)
+bones/12/rotation = Quaternion(0.09919669, 9.305782e-25, -1.558651e-25, 0.99506783)
+bones/13/rotation = Quaternion(-0.14172398, 8.271807e-25, 1.0081265e-24, 0.98990625)
+bones/15/rotation = Quaternion(-0.017471062, -0.00088866294, 0.050791726, 0.9985561)
+bones/16/rotation = Quaternion(0.097597614, -1.6543612e-24, -2.0679515e-25, 0.99522597)
+bones/17/rotation = Quaternion(0.011364967, 7.8194427e-25, -6.3977384e-25, 0.99993545)
+bones/19/rotation = Quaternion(0.0034016122, -2.5205092e-05, -0.0074116006, 0.99996674)
+bones/20/rotation = Quaternion(0.072171986, -1.1373734e-24, 1.0342462e-24, 0.99739224)
+bones/21/rotation = Quaternion(0.0047519454, -1.6486346e-20, -3.469408e-18, 0.99998873)
+bones/23/rotation = Quaternion(0.07048214, -0.002042189, -0.028890392, 0.99709255)
+bones/24/rotation = Quaternion(0.010270144, -1.0000484e-24, -6.4623485e-26, 0.99994725)
+bones/25/rotation = Quaternion(-0.09331362, 1.3655363e-17, 3.0221412e-18, 0.9956368)
+bones/27/rotation = Quaternion(0.053076282, -0.0028482643, -0.05351071, 0.9971517)
+bones/28/rotation = Quaternion(0.09630219, 6.9066434e-18, -6.6823046e-19, 0.99535215)
+bones/29/rotation = Quaternion(-0.16061084, 5.572308e-19, -3.424406e-18, 0.9870178)
+bones/31/rotation = Quaternion(0.557752, -0.43427745, 0.560109, 0.43196493)
+bones/32/rotation = Quaternion(-0.07120729, -0.0015880706, 0.022239879, 0.99721235)
+bones/33/rotation = Quaternion(-0.012379362, 0.0004886007, -0.039435007, 0.9991453)
+bones/34/rotation = Quaternion(0.045612153, -0.08757355, -0.030481294, 0.9946464)
+bones/36/rotation = Quaternion(0.06070187, 3.369631e-18, 5.5408776e-17, 0.99815595)
+bones/37/rotation = Quaternion(-0.13845532, -3.1019277e-24, 3.3047006e-24, 0.9903687)
+bones/39/rotation = Quaternion(-0.0058361758, 0.0002784395, -0.047655255, 0.9988468)
+bones/40/rotation = Quaternion(0.08370735, -1.1616751e-18, -1.3829083e-17, 0.9964904)
+bones/41/rotation = Quaternion(0.027943397, -3.877924e-19, -1.3872368e-17, 0.99960953)
+bones/43/rotation = Quaternion(0.0016552683, -7.3145593e-06, -0.004417834, 0.9999889)
+bones/44/rotation = Quaternion(0.07733075, 4.135903e-25, -2.0679515e-25, 0.9970055)
+bones/45/rotation = Quaternion(-0.18087311, -1.2550592e-18, 6.824447e-18, 0.98350644)
+bones/47/rotation = Quaternion(0.032551773, 0.001043475, 0.03202251, 0.99895644)
+bones/48/rotation = Quaternion(0.021550402, 3.7383704e-20, 1.7343205e-18, 0.9997678)
+bones/49/rotation = Quaternion(-0.11073571, -1.0339758e-25, -7.754818e-26, 0.9938499)
+bones/51/rotation = Quaternion(0.041027993, 0.0036482587, 0.08849642, 0.9952245)
+bones/53/rotation = Quaternion(-0.11972684, -6.888982e-18, -8.307718e-19, 0.9928069)
+bones/56/rotation = Quaternion(-0.03374463, -0.00068092346, 0.020163123, 0.9992269)
+bones/57/rotation = Quaternion(0.4761552, -0.020935522, 0.011340291, 0.87903893)
+bones/58/rotation = Quaternion(0.3042192, -0.011546655, 0.004130746, 0.9525232)
+bones/60/rotation = Quaternion(-3.8745453e-19, -0.006327822, 0.99998, 6.1229093e-17)
+bones/61/rotation = Quaternion(-0.031157179, 0.00062872487, -0.02016523, 0.9993109)
+bones/62/rotation = Quaternion(0.4750448, 0.03412002, -0.0010700942, 0.8792993)
+bones/63/rotation = Quaternion(0.3337592, 0.0132519305, -0.0040869266, 0.9425563)
+
+[node name="BoneAttachment3D" type="BoneAttachment3D" parent="Ch15_nonPBR/Skeleton3D" index="1" unique_id=356943922]
+transform = Transform3D(0.16951324, -0.9770888, 0.12869513, -0.17826404, -0.15883024, -0.9710792, 0.9692714, 0.14166905, -0.20110369, -0.7841518, 1.3868014, 0.008335492)
+bone_name = "mixamorig_RightHandIndex1"
+bone_idx = 39
+
+[node name="Root Scene" parent="Ch15_nonPBR/Skeleton3D/BoneAttachment3D" unique_id=1431036603 instance=ExtResource("2_ay375")]
+transform = Transform3D(-0.058146022, 0.18041024, -0.013084613, 0.18082808, 0.058318265, 0.0005193325, 0.0045092367, -0.012294024, -0.18954833, -0.026608825, -0.03701368, 0.016360521)
+
+[node name="AnimationPlayer" parent="Ch15_nonPBR" index="1" unique_id=319107453]
+libraries/FiringRifle = ExtResource("2_lrhy8")
+libraries/FiringRifleWalk = ExtResource("3_ay375")
+libraries/RifleIdle = ExtResource("4_ioqu5")
+libraries/RifleWalk = ExtResource("5_tuxdl")
+
+[editable path="Ch15_nonPBR"]
